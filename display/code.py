@@ -8,17 +8,19 @@ import excision
 import mario1
 import pikachu2
 import ricardo
-import squidGames
 import illenium
 
-pixels = neopixel.NeoPixel(board.D18, 1536, brightness=0.05, auto_write=False)
+display1 = neopixel.NeoPixel(board.D17, 1536, brightness=0.05, auto_write=False)
+display2 = neopixel.NeoPixel(board.D18, 1536, brightness=0.05, auto_write=False)
 
 def play(animation, times):
     for i in range(times):
         for frame in animation.gif:
             for i in range(len(frame)):
-                pixels[i] = frame[i]
-            pixels.show()
+                display1[i] = frame[i]
+                display2[i] = frame[i]
+            display1.show()
+            display2.show()
 
 while True:
     play(mario1, 3)

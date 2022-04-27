@@ -119,6 +119,6 @@ for fp in frames_pixels:
 	output_frames.append("[" + ",".join(str(x) for x in convert_frame(fp)) + "]")
 
 gif = "gif = [" + ",".join(str(x) for x in output_frames) + "]"
-f = open('code/' + name + ".py", "w")
+f = open('../display/' + name + ".py", "w")
 f.write(gif)
 f.close()
