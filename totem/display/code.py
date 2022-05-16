@@ -13,7 +13,7 @@ import spongebob
 import squirtle
 import winnie
 
-pixels = neopixel.NeoPixel(board.D17, 1536, brightness=0.05, auto_write=False)
+pixels = neopixel.NeoPixel(board.D18, 1536, brightness=0.1, auto_write=False)
 
 def play(animation, times):
     for i in range(times):
