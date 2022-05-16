@@ -7,31 +7,28 @@ import alien1
 import excision
 import mario1
 import pikachu2
-import ricardo
+#import ricardo
 import illenium
 import spongebob
 import squirtle
 import winnie
 
-display1 = neopixel.NeoPixel(board.D17, 1536, brightness=0.05, auto_write=False)
-display2 = neopixel.NeoPixel(board.D18, 1536, brightness=0.05, auto_write=False)
+pixels = neopixel.NeoPixel(board.D17, 1536, brightness=0.05, auto_write=False)
 
 def play(animation, times):
     for i in range(times):
         for frame in animation.gif:
             for i in range(len(frame)):
-                display1[i] = frame[i]
-                display2[i] = frame[i]
-            display1.show()
-            display2.show()
+                pixels[i] = frame[i]
+            pixels.show()
 
 while True:
-    play(spongebob, 3)
-    play(squirtle, 2)
-    play(winnie, 1)
+    play(spongebob, 6)
+    play(squirtle, 6)
+    play(winnie, 2)
     play(mario1, 3)
     play(illenium, 1)
     play(pikachu2, 5)
     play(toad, 3)
-    play(ricardo, 1)
-    play(alien1, 1)
+    #play(ricardo, 1)
+    play(alien1, 3)
