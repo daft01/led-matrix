@@ -97,7 +97,7 @@ def convert_frame(frame):
 
 	return c1
 
-name = "spongebob"
+name = "squirtle"
 im = Image.open('gifs/' + name + '.gif')
 
 frames = im.n_frames
