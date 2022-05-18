@@ -4,7 +4,8 @@ import toad
 import pikachu
 import dinosaur
 import alien1
-import excision
+#import excision
+import pepe
 import mario1
 import pikachu2
 #import ricardo
@@ -23,12 +24,14 @@ def play(animation, times):
             pixels.show()
 
 while True:
-    play(spongebob, 6)
-    play(squirtle, 6)
+    play(spongebob, 2)
+    play(squirtle, 2)
     play(winnie, 2)
-    play(mario1, 3)
-    play(illenium, 1)
-    play(pikachu2, 5)
-    play(toad, 3)
+    play(mario1, 2)
+    play(illenium, 2)
+    play(pikachu2, 2)
+    play(toad, 2)
+    play(pepe, 2)
     #play(ricardo, 1)
-    play(alien1, 3)
+    play(alien1, 2)
+    play(pikachu, 2)
